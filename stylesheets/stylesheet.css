@@ -12,6 +12,7 @@ header, hgroup, menu, nav, output, section, summary, time, mark, audio, video {
   vertical-align: baseline;
 }
 
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav,
 section {
@@ -25,6 +26,40 @@ ol, ul {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+
+/* Media Queries */
+@media only screen and (min-width: 0px) {
+  body { font-size: 10px; }
+}
+
+@media only screen and (min-width: 240px) {
+  body { font-size: 11px; }
+}
+
+@media only screen and (min-width: 480px) {
+  body { font-size: 12px; }
+}
+
+@media only screen and (min-width: 768px) {
+  body { font-size: 13px; }
+}
+
+@media only screen and (min-width: 1000px) {
+  body { font-size: 14px; }
+}
+
+@media only screen and (min-width: 1170px) {
+  body { font-size: 15px; }
+}
+
+@media only screen and (min-width: 1340px) {
+  body { font-size: 16px; }
+}
+
+@media only screen and (min-width: 1580px) {
+  body { font-size: 17px; }
 }
 
 
@@ -54,7 +89,6 @@ body {
   background-color: #fff;
   box-sizing: border-box;
   color: #666;
-  font-size: 16px;
   font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
   line-height: 1.5;
 }
@@ -96,7 +130,7 @@ section > h1 {
   border-bottom: 1px solid #999;
   font-size: 1.5em;
   font-weight: lighter;
-  margin: 1.5em 0.5vw 0.75em 0.5vw;
+  margin: 2em 0.75vw 0.75em 0.5vw;
   text-transform: uppercase;
 }
 
