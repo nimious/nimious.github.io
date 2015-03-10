@@ -55,6 +55,10 @@ body {
   line-height: 1.5;
 }
 
+em {
+  font-style: italic;
+}
+
 footer, header, section {
   clear: both;
   margin: 0 auto;
@@ -67,7 +71,7 @@ footer > p, header > *, section > p {
 }
 
 footer {
-  margin-top: 2em;
+  margin-top: 2.5em;
 }
 
 header {
