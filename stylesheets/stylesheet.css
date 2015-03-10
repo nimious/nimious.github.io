@@ -46,6 +46,10 @@ a {
   -ms-transition: text-shadow 0.5s ease;
 }
 
+a:hover {
+  color: #ff9a00;
+}
+
 body {
   background-color: #fff;
   box-sizing: border-box;
@@ -67,7 +71,7 @@ footer, header, section {
 }
 
 footer > p, header > *, section > p {
-  margin: 0 0.625vw;
+  margin: 0 0.5vw;
 }
 
 footer {
@@ -92,7 +96,7 @@ section > h1 {
   border-bottom: 1px solid #999;
   font-size: 1.5em;
   font-weight: lighter;
-  margin: 1.5em 0.625vw 0.75em 0.625vw;
+  margin: 1.5em 0.5vw 0.75em 0.5vw;
   text-transform: uppercase;
 }
 
@@ -118,6 +122,10 @@ div.tile div {
 div.tile img {
   border-bottom: 0.2em solid #0090ff;
   display: block;
+}
+
+div.tile img:hover {
+  border-color: #ff9a00;
 }
 
 div.tile div {
@@ -147,4 +155,8 @@ div.tile p {
   font-weight: 700;
   padding: 10px 50px 10px 10px;
   z-index: 10;
+}
+
+#forkme_banner:hover {
+  background-color: #ff9a00;
 }
