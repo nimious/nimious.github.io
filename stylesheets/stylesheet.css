@@ -31,35 +31,38 @@ table {
 
 /* Media Queries */
 @media only screen and (min-width: 0px) {
-  body { font-size: 10px; }
+  body { font-size: 12px; /*background-color: green;*/ }
+  footer { text-align: center; }
+  div.tile { width: 100%; }
 }
 
-@media only screen and (min-width: 240px) {
-  body { font-size: 11px; }
+@media only screen and (min-width: 320px) {
+  body { font-size: 13px; /*background-color: yellow;*/ }
+  div.tile { width: 50%; }
 }
 
-@media only screen and (min-width: 480px) {
-  body { font-size: 12px; }
+@media only screen and (min-width: 640px) {
+  body { font-size: 14px; /*background-color: orange;*/ }
+  #copyright { float: left;  }
+  #githubpages { float: right; }
+  div.tile { width: 33.3333%; }
 }
 
-@media only screen and (min-width: 768px) {
-  body { font-size: 13px; }
-}
-
-@media only screen and (min-width: 1000px) {
-  body { font-size: 14px; }
-}
-
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 800px) {
   body { font-size: 15px; }
 }
 
-@media only screen and (min-width: 1340px) {
-  body { font-size: 16px; }
+@media only screen and (min-width: 960px) {
+  body { font-size: 16px; /*background-color: red;*/ }
+  div.tile { width: 25%; }
+}
+
+@media only screen and (min-width: 1024px) {
+  body { font-size: 18px; }
 }
 
 @media only screen and (min-width: 1580px) {
-  body { font-size: 17px; }
+  body { font-size: 20px; }
 }
 
 
@@ -68,7 +71,6 @@ a {
   text-decoration: none;
   color: #0090ff;
   text-shadow: none;
-
   transition: color 0.5s ease;
   transition: text-shadow 0.5s ease;
   -webkit-transition: color 0.5s ease;
@@ -86,7 +88,6 @@ a:hover {
 }
 
 body {
-  background-color: #fff;
   box-sizing: border-box;
   color: #666;
   font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
@@ -95,6 +96,7 @@ body {
 
 em {
   font-style: italic;
+  font-weight: bold;
 }
 
 footer, header, section {
@@ -109,7 +111,8 @@ footer > p, header > *, section > p {
 }
 
 footer {
-  margin-top: 2.5em;
+  font-size: 0.75em;
+  margin-bottom: 1em;
 }
 
 header {
@@ -123,39 +126,38 @@ header > h1 {
 
 header > h2 {
   font-size: 1.25em;
-  font-weight: normal;
+  font-weight: lighter;
 }
 
 section > h1 {
   border-bottom: 1px solid #999;
   font-size: 1.5em;
   font-weight: lighter;
-  margin: 2em 0.75vw 0.75em 0.5vw;
+  margin: 1.5em 0.5vw 0.75em 0.5vw;
   text-transform: uppercase;
 }
 
-div.page {
-  min-width: 1024px;
+section > p {
+  padding-bottom: 1.5em;
 }
 
 div.tile {
+  display: block;
   float: left;
   max-width: 320px;
-  min-width: 160px;
   padding: 0.5em 0;
-  width: 25vw;
 }
 
-div.tile img,
-div.tile div {
-  box-shadow: 0 0 2px rgba(0,0,0,.25);
-  margin-left: 2.5%;
-  width: 95%;
+div.tile > div {
+  box-shadow: 0 0 10px rgba(0,0,0,.25);
+  height: 19em;
+  margin: 0 0.5em;
 }
 
 div.tile img {
   border-bottom: 0.2em solid #0090ff;
   display: block;
+  width: 100%;
 }
 
 div.tile img:hover {
@@ -167,10 +169,9 @@ div.tile div {
 }
 
 div.tile h1 {
-  border-top: ;
   font-size: 1.25em;
   font-weight: bold;
-  padding: 0.25em 0.5em;
+  padding: 0.25em 0.375em;
 }
 
 div.tile p {
@@ -182,7 +183,7 @@ div.tile p {
   background: url('../images/blacktocat.png') #0090ff no-repeat 95% 50%;
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
-  box-shadow: 0 0 10px rgba(0,0,0,.5);
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
   color: #fff;
   display: block;
   float: right;
