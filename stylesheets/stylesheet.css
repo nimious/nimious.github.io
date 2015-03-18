@@ -33,28 +33,30 @@ table {
 @media only screen and (min-width: 0px) {
   body { font-size: 12px; /*background-color: green;*/ }
   footer { text-align: center; }
-  div.tile { width: 100%; }
+  section.packages > div { width: 100%; }
 }
 
 @media only screen and (min-width: 320px) {
   body { font-size: 13px; /*background-color: yellow;*/ }
-  div.tile { width: 50%; }
+  section.packages > div { width: 50%; }
 }
 
 @media only screen and (min-width: 640px) {
   body { font-size: 14px; /*background-color: orange;*/ }
   #copyright { float: left;  }
   #githubpages { float: right; }
-  div.tile { width: 33.3333%; }
+  section.packages > div { width: 33.3333%; }
 }
 
 @media only screen and (min-width: 800px) {
   body { font-size: 15px; }
+  section.text p { max-width: 66.6666%; }
 }
 
 @media only screen and (min-width: 960px) {
   body { font-size: 16px; /*background-color: red;*/ }
-  div.tile { width: 25%; }
+  section.packages > div { width: 25%; }
+  section.text p { max-width: 75%; }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -96,7 +98,6 @@ body {
 
 em {
   font-style: italic;
-  font-weight: bold;
 }
 
 footer, header, section {
@@ -141,44 +142,13 @@ section > p {
   padding-bottom: 1.5em;
 }
 
-div.tile {
-  display: block;
-  float: left;
-  max-width: 320px;
-  padding: 0.5em 0;
-}
-
-div.tile > div {
-  box-shadow: 0 0 10px rgba(0,0,0,.25);
-  height: 19em;
-  margin: 0 0.5em;
-}
-
-div.tile img {
-  border-bottom: 0.2em solid #0090ff;
-  display: block;
-  width: 100%;
-}
-
-div.tile img:hover {
-  border-color: #ff9a00;
-}
-
-div.tile div {
-  background-color: #fff;
-}
-
-div.tile h1 {
-  font-size: 1.25em;
+strong {
+  font-style: italic;
   font-weight: bold;
-  padding: 0.25em 0.375em;
-}
-
-div.tile p {
-  padding: 0.25em 0.5em;
 }
 
 
+/* Header */
 #forkme_banner {
   background: url('../images/blacktocat.png') #0090ff no-repeat 95% 50%;
   border-bottom-left-radius: 2px;
@@ -194,4 +164,40 @@ div.tile p {
 
 #forkme_banner:hover {
   background-color: #ff9a00;
+}
+
+
+/* Packages section */
+section.packages > div {
+  display: block;
+  float: left;
+  max-width: 320px;
+  padding: 0.5em 0;
+}
+
+section.packages > div > div {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,.25);
+  height: 19em;
+  margin: 0 0.5em;
+}
+
+section.packages > div h1 {
+  font-size: 1.25em;
+  font-weight: bold;
+  padding: 0.25em 0.375em;
+}
+
+section.packages img {
+  border-bottom: 0.2em solid #0090ff;
+  display: block;
+  width: 100%;
+}
+
+section.packages img:hover {
+  border-color: #ff9a00;
+}
+
+section.packages p {
+  padding: 0.25em 0.5em;
 }
