@@ -170,6 +170,7 @@ section.packages > div {
   float: left;
   max-width: 320px;
   padding: 0.5em 0;
+  position: relative;
 }
 
 section.packages > div > div {
@@ -197,4 +198,9 @@ section.packages img:hover {
 
 section.packages p {
   padding: 0.25em 0.5em;
+}
+
+section.packages p:last-child {
+  bottom: 0.75em;
+  position: absolute;
 }
