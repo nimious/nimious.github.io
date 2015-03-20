@@ -92,7 +92,7 @@ a:hover {
 body {
   box-sizing: border-box;
   background-color: #fafafa;
-  color: #666;
+  color: #888;
   font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
   line-height: 1.5;
 }
@@ -128,7 +128,8 @@ header > h2 {
 }
 
 section > h1 {
-  border-bottom: 1px solid #999;
+  border-bottom: 1px solid #bbb;
+  color: #666;
   font-size: 1.5em;
   font-weight: lighter;
   margin: 1.5em 0.5vw 0.75em 0.5vw;
@@ -181,13 +182,13 @@ section.packages > div > div {
 }
 
 section.packages > div h1 {
+  color: #666;
   font-size: 1.25em;
-  font-weight: bold;
   padding: 0.25em 0.375em;
 }
 
 section.packages img {
-  border-bottom: 0.2em solid #0090ff;
+  border-bottom: 0.25em solid #0090ff;
   display: block;
   width: 100%;
 }
