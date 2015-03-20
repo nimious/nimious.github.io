@@ -73,16 +73,12 @@ a {
   text-decoration: none;
   color: #0090ff;
   text-shadow: none;
-  transition: color 0.5s ease;
-  transition: text-shadow 0.5s ease;
-  -webkit-transition: color 0.5s ease;
-  -webkit-transition: text-shadow 0.5s ease;
-  -moz-transition: color 0.5s ease;
-  -moz-transition: text-shadow 0.5s ease;
-  -o-transition: color 0.5s ease;
-  -o-transition: text-shadow 0.5s ease;
-  -ms-transition: color 0.5s ease;
-  -ms-transition: text-shadow 0.5s ease;
+
+  -webkit-transition: all 0.15s ease;
+  -moz-transition: all 0.15s ease;
+  -o-transition: all 0.15s ease;
+  -ms-transition: all 0.15s ease;
+  transition: all 0.15s ease;
 }
 
 a:hover {
@@ -191,10 +187,17 @@ section.packages img {
   border-bottom: 0.25em solid #0090ff;
   display: block;
   width: 100%;
+
+  -webkit-transition: all 0.15s ease;
+  -moz-transition: all 0.15s ease;
+  -o-transition: all 0.15s ease;
+  -ms-transition: all 0.15s ease;
+  transition: all 0.15s ease;
 }
 
 section.packages img:hover {
   border-color: #ff9a00;
+  opacity: 0.66;
 }
 
 section.packages p {
